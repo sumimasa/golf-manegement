@@ -1,0 +1,39 @@
+header{
+  display:flex;
+  justify-content: space-between;
+  
+  width: 100vw;
+  font-family: 'IM Fell DW Pica SC', serif;
+  position: fixed;
+  top:0px;
+  z-index: 10;
+}
+.logout{
+  text-decoration: none;
+  color:white;
+}
+.right-content{
+  display: flex;
+  align-items: center;
+  padding-right:20px;
+  
+}
+.title{
+  color:white;
+  font-size: 40px;
+  padding:30px 20px;
+  text-decoration: none;
+}
+.user-name{
+  color:white;
+  padding-right:20px;
+  font-size: 20px;
+}
+.logout{
+  color:white;
+  font-size:20px;
+}
+.user-score{
+  text-decoration: none;
+  color:white;
+}

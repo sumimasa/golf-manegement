@@ -4,12 +4,30 @@
     <title>GolfManegiment</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header>
+      <div class="left-content">
+        <%= link_to "GolfManegiment",root_path,class:"title" %>
+      </div>
+      <div class="right-content">
+        <div class="user-name">
+          <% if user_signed_in?%>
+          <%= link_to "#{current_user.nickname}さんのスコア",root_path ,class:"user-score"%>
+          <% end %>
+        </div>
+        <div class="logout-wrap">
+          <% if user_signed_in?%>
+            <%= link_to 'ログアウト',destroy_user_session_path,class:"logout",method: :delete%>
+          <% end %>
+        </div>
+      </div>
+    </header>
     <%= yield %>
   </body>
 </html>

@@ -37,6 +37,8 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    active_hash (3.1.0)
+      activesupport (>= 5.0.0)
     activejob (6.0.4.1)
       activesupport (= 6.0.4.1)
       globalid (>= 0.3.6)
@@ -114,6 +116,7 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
+    json (2.6.1)
     jwt (2.3.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -206,6 +209,8 @@ GEM
       thor (>= 0.20.3, < 2.0)
     rainbow (3.0.0)
     rake (13.0.6)
+    rakuten_web_service (1.13.1)
+      json (~> 2.3)
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -290,6 +295,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_hash
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
@@ -305,6 +311,7 @@ DEPENDENCIES
   pry-rails
   puma (~> 3.11)
   rails (~> 6.0.0)
+  rakuten_web_service
   rubocop
   sass-rails (~> 5)
   selenium-webdriver

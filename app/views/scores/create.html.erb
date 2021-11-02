@@ -1,0 +1,20 @@
+<div class="scores-wrapper">
+  <div class="scores">
+    
+    <h1 class="user-name"><%= current_user.nickname%>さん</h1>
+    
+    <h2 class="good-work">
+      お疲れ様でした
+    </h2>
+    <p>スコアは<%=@score.total_score%>打です</p>
+    <div class="top-mypage">
+      <div class="top-button">
+        <%= link_to "トップページへ",root_path ,class:"to top"%>
+      </div>
+      <div class="my-page-button">
+        <%= link_to "スコア一覧へ",root_path,class:"to mypage"%>
+      </div>
+
+    </div>
+  </div>
+</div>

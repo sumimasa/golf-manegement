@@ -1,0 +1,48 @@
+.scores-wrapper{
+  height:100vh;
+  width:100vw;
+  background-image: image-url("bob-osias-2wIxsJ5JbFc-unsplash.jpg");
+  background-size: 100vw,100vh;
+  background-repeat: no-repeat;
+  background-position: center 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scores{
+  
+  height: 60%;
+  width:60%;
+}
+.scores h1{
+  font-size: 40px;
+  text-align: center;
+}
+.scores h2{
+  text-align: center;
+  font-size: 45px;
+}
+.scores p{
+  text-align:center;
+  font-size: 30px;
+}
+.top-mypage{
+  display: flex;
+  justify-content: space-between;
+  width:30%;
+  margin:0 auto;
+  margin-top:30px;
+}
+.to{
+  text-decoration: none;
+  color:white;
+  opacity: 0.7;
+  padding:20px;
+  border-radius: 10px;
+}
+.top{
+  background-color: yellow;
+}
+.mypage{
+  background-color: blue;
+}

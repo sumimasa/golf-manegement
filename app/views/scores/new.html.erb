@@ -1,0 +1,39 @@
+<div class="new-scores">
+  <div class="course-names">
+    <div class="form-title" id="list">
+      <h1 class="course-name">ゴルフ場名入力画面</h1>
+    </div>
+    <%= form_with model:@score,url:scores_path, class: 'form', id:"form",local: true do |f| %>
+      <div class="form-input">
+      <%= f.text_field :course_name, class: 'form-message', id:"course-name",placeholder: 'ゴルフ場名を入力してください' %>
+      </div>
+      <div class="total-score">
+        <div class="in-score">
+          <%= f.collection_select(:score_1h, Count.all, :count, :name, {}, {class:"select-box", id:"item-category"}) %>
+          <%= f.collection_select(:score_2h, Count.all, :count, :name, {}, {class:"select-box", id:"item-category"}) %>
+          <%= f.collection_select(:score_3h, Count.all, :count, :name, {}, {class:"select-box", id:"item-category"}) %>
+          <%= f.collection_select(:score_4h, Count.all, :count, :name, {}, {class:"select-box", id:"item-category"}) %>
+          <%= f.collection_select(:score_5h, Count.all, :count, :name, {}, {class:"select-box", id:"item-category"}) %>
+          <%= f.collection_select(:score_6h, Count.all, :count, :name, {}, {class:"select-box", id:"item-category"}) %>
+          <%= f.collection_select(:score_7h, Count.all, :count, :name, {}, {class:"select-box", id:"item-category"}) %>
+          <%= f.collection_select(:score_8h, Count.all, :count, :name, {}, {class:"select-box", id:"item-category"}) %>
+          <%= f.collection_select(:score_9h, Count.all, :count, :name, {}, {class:"select-box", id:"item-category"}) %>
+
+        </div>
+        <div class="out-score">
+          <%= f.collection_select(:score_10h, Count.all, :count, :name, {}, {class:"select-box", id:"item-category"}) %>
+          <%= f.collection_select(:score_11h, Count.all, :count, :name, {}, {class:"select-box", id:"item-category"}) %>
+          <%= f.collection_select(:score_12h, Count.all, :count, :name, {}, {class:"select-box", id:"item-category"}) %>
+          <%= f.collection_select(:score_13h, Count.all, :count, :name, {}, {class:"select-box", id:"item-category"}) %>
+          <%= f.collection_select(:score_14h, Count.all, :count, :name, {}, {class:"select-box", id:"item-category"}) %>
+          <%= f.collection_select(:score_15h, Count.all, :count, :name, {}, {class:"select-box", id:"item-category"}) %>
+          <%= f.collection_select(:score_16h, Count.all, :count, :name, {}, {class:"select-box", id:"item-category"}) %>
+          <%= f.collection_select(:score_17h, Count.all, :count, :name, {}, {class:"select-box", id:"item-category"}) %>
+          <%= f.collection_select(:score_18h, Count.all, :count, :name, {}, {class:"select-box", id:"item-category"}) %>
+
+        </div>
+      </div>
+      <%= f.submit 'スコア記入へ', class: 'form-submit',id:"submit" %>
+    <% end %>
+  </div>
+</div>

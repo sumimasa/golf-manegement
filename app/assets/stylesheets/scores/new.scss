@@ -1,0 +1,80 @@
+.new-scores{
+  height: 100vh;
+  width:100vw;
+  background-image: image-url("bob-osias-2wIxsJ5JbFc-unsplash.jpg");
+  background-size: 100vw,100vh;
+  background-repeat: no-repeat;
+  background-position: center 55%;
+  display: flex;
+  align-items: center;
+  
+}
+.course-names{
+  width:90%;
+  height:80%;
+  background-color:rgb(224, 219, 219);
+  margin:0 auto;
+  
+}
+.form-title{
+  
+  text-align: center;
+  font-size: 40px;
+}
+.form {
+  
+  height: 100%;
+  padding:20px 40px;
+  width:100%;
+}
+.form-message{
+  
+  padding-left:10px;
+  border:none;
+  width:100%;
+  height:50px;
+}
+.form-input{
+  width:100%;
+  background-color: white;
+  display: flex;
+}
+.form-submit{
+  padding:0 20px;
+  margin:0 auto;
+  border:none;
+  color:white;
+  font-size:16px;
+  background-color: #38aef0;
+  height:50px;
+  
+}
+.form-image{
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+.hidden{
+  display: none;
+}
+.total-score{
+  display: flex;
+  background-color: green;
+  overflow:scroll;
+  height:80%;
+  width:100%;
+}
+.in-score{
+  background-color: hotpink;
+  height:100%;
+  width:50%;
+}
+.out-score{
+  background-color: khaki;
+  height:100%;
+  width:50%;
+}
