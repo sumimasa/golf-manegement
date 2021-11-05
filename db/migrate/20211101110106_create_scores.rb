@@ -22,6 +22,7 @@ class CreateScores < ActiveRecord::Migration[6.0]
       t.string :course_name,null: false
       t.integer :total_score
       t.references :user,null: false,foreign_key: :true
+      t.date :play_date,null: false
       t.timestamps
     end
   end

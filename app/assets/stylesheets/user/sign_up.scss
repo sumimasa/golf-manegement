@@ -13,12 +13,18 @@
 .form{
   opacity: 0.8;
   text-align:center;
+  
+  height: 80%;
+  width: 80%;
 }
 .field{
   text-decoration: none;
 }
 .form-text-wrap{
-  display: flex;
+  text-align: center;
+  
+  width:70%;
+  margin:0 auto;
 }
 .form-group {
   width: 50%;
@@ -66,7 +72,11 @@
 }
 .sns-wrapper{
   display: flex;
-  margin-top:25px;
+  justify-content: space-around;
+  margin:25px auto;
+  
+  width:50%;
+  
 }
 .facebook{
   background-color: blue;
@@ -78,5 +88,5 @@
   color:red;
 }
 .field_with_errors {
-  display: inline;
+  display: contents;
 }

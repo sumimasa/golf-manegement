@@ -1,9 +1,10 @@
 class Score < ApplicationRecord
   belongs_to :user
+  
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :count
 
-  with_options presence: true,numericality: {other_than:0,message:"打数を選択してください"} do
+  with_options presence: true, numericality: { only_integer: true} do
     validates :score_1h
     validates :score_2h
     validates :score_3h
@@ -23,5 +24,5 @@ class Score < ApplicationRecord
     validates :score_17h
     validates :score_18h
   end
-  validates :course_name,presence: true
+  validates :course_name, :play_date,:user_id, presence: true
 end

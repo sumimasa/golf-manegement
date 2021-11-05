@@ -4,9 +4,10 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
   root to:'home#index'
-  resources :scores 
-    
-    
+  resources :scores,only:[:new,:create,:show,:edit,:update]
+  resources :users,only: :show
+  
+  
   
 
   

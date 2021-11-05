@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_01_110106) do
+ActiveRecord::Schema.define(version: 2021_11_05_000722) do
 
   create_table "scores", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "score_1h", null: false
@@ -34,8 +34,10 @@ ActiveRecord::Schema.define(version: 2021_11_01_110106) do
     t.string "course_name", null: false
     t.integer "total_score"
     t.bigint "user_id", null: false
+    t.date "play_date", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "memo"
     t.index ["user_id"], name: "index_scores_on_user_id"
   end
 

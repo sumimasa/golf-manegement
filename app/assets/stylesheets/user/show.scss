@@ -1,0 +1,51 @@
+.my-wrapper{
+  background-image: image-url("amauri-cruz-filho-kBNV9WpCs5k-unsplash.jpg");
+  background-size: 100vw,100vh;
+  background-repeat: no-repeat;
+  background-position: center 55%;
+  height: 100vh;
+  width:100vw;
+  padding-top:100px;
+  display: flex;
+  justify-content: center;
+  
+}
+.list-wrapper{
+  height:80vh;
+  width:70vw;
+  background-color: white;
+  overflow: scroll;
+  
+}
+.list-user{
+  text-align: center;
+  padding:50px;
+  font-size: 40px;
+}
+.score-list{
+  display: flex;
+  justify-content: space-between;
+  width:90%;
+  margin:0 auto;
+  margin-bottom:60px;
+  font-size:25px;
+  
+}
+.golf-course-name{
+  text-align: center;
+  color:pink;
+  width: 40%;
+}
+.users-score{
+  width:20%;
+  text-align: center;
+  color:pink;
+}
+.play-day{
+  width:30%;
+  text-align: center;
+  color:pink;
+}
+.score-detail{
+  text-decoration: none;
+}

@@ -18,7 +18,7 @@
       <div class="right-content">
         <div class="user-name">
           <% if user_signed_in?%>
-          <%= link_to "#{current_user.nickname}さんのスコア",root_path ,class:"user-score"%>
+          <%= link_to "#{current_user.nickname}さんのスコア", user_path(current_user.id),class:"user-score"%>
           <% end %>
         </div>
         <div class="logout-wrap">

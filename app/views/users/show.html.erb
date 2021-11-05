@@ -1,0 +1,21 @@
+<div class="my-wrapper">
+  
+  <div class="list-wrapper">
+    <h1 class="list-user"><%= @nickname%>さんのスコア一覧</h1>
+    <% @scores.each do |score| %>
+      <%= link_to score_path(score.id) ,class:"score-detail" do%>
+        <div class="score-list">
+          <div class="golf-course-name">
+            <p><%=score.course_name%></p>
+          </div>
+          <div class="users-score">
+            <p><%= score.total_score%></p>
+          </div>
+          <div class="play-day">
+            <p><%= score.play_date%></p>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

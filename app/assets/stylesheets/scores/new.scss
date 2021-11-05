@@ -21,8 +21,8 @@
   text-align: center;
   font-size: 40px;
 }
-.form {
-  
+.score-form {
+  text-align: center;
   height: 100%;
   padding:20px 40px;
   width:100%;
@@ -31,13 +31,14 @@
   
   padding-left:10px;
   border:none;
-  width:100%;
+  width:70%;
   height:50px;
 }
 .form-input{
   width:100%;
   background-color: white;
   display: flex;
+  justify-content: space-between;
 }
 .form-submit{
   padding:0 20px;
@@ -47,34 +48,72 @@
   font-size:16px;
   background-color: #38aef0;
   height:50px;
+  width: 30%;
+  
   
 }
-.form-image{
-  font-size: 12px;
-  background-color: lightblue;
-  color: white;
-  padding: 12px;
-  width: 60px;
-  margin: 5px 10px;
-  text-align: center;
-}
-.hidden{
-  display: none;
-}
+
 .total-score{
   display: flex;
-  background-color: green;
-  overflow:scroll;
-  height:80%;
+  
+  
+  height:60%;
   width:100%;
 }
 .in-score{
-  background-color: hotpink;
+  background-color: coral;
   height:100%;
   width:50%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
 }
 .out-score{
   background-color: khaki;
   height:100%;
   width:50%;
+  overflow: scroll;
+}
+.select-box{
+  width:200px;
+  height:30px;
+  color:pink;
+  border:1px solid blue;
+  border-radius: 10px;
+  background-color: cyan;
+}
+.select-box:hover{
+  color:blue;
+}
+.input-score{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top:30px;
+}
+.input-number{
+  font-size: 50px;
+  border-bottom:10px solid crimson;
+  padding:0 20px;
+  
+}
+::placeholder{
+  color:chocolate;
+}
+.field_with_errors{
+  display:contents;
+}
+.error-message{
+  text-align: center;
+  color:brown;
+  font-size: 40px;
+}
+.score-memo{
+  margin:20px 0;
+  
+}
+.memo-form{
+  width:100%;
+  height:5%;
+  padding:10px;
 }
