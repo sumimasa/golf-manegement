@@ -6,13 +6,13 @@
       <%= link_to score_path(score.id) ,class:"score-detail" do%>
         <div class="score-list">
           <div class="golf-course-name">
-            <p><%=score.course_name%></p>
+            <p><%=score.course_name %></p>
           </div>
           <div class="users-score">
-            <p><%= score.total_score%></p>
+            <p><%= score.total_score %></p>
           </div>
           <div class="play-day">
-            <p><%= score.play_date%></p>
+            <p><%= score.play_date %></p>
           </div>
         </div>
       <% end %>
