@@ -16,7 +16,7 @@
 }
 .contents{
   
-  width:40vw;
+  width:70%;
   margin:0 auto;
 }
 
@@ -38,17 +38,18 @@
 }
 .bottom-contents{
   display: flex;
-  width:50vw;
+  width:100%;
   justify-content: space-between;
   margin:0 auto;
+  
 }
 .score{
-  background-color:rgba(163, 18, 78, 0.781);
+  background-color:rgba(163, 18, 78, 0.9);
 }
 .reserve{
-  background-color:rgba(45, 42, 204, 0.575)
+  background-color:rgba(45, 42, 204, 0.9)
 }
 .practice{
-  background-color:rgba(158, 211, 72, 0.616)
+  background-color:rgba(158, 211, 72, 0.9)
   
 }

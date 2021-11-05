@@ -10,7 +10,7 @@
   justify-content: center;
 }
 .scores{
-  
+  background-color: rgba(77, 77, 228, 0.808);
   height: 60%;
   width:60%;
 }
@@ -29,9 +29,12 @@
 .top-mypage{
   display: flex;
   justify-content: space-between;
-  width:30%;
+  align-items: center;
+  width:50%;
+  height:40%;
   margin:0 auto;
-  margin-top:30px;
+  
+  
 }
 .to{
   text-decoration: none;

@@ -10,9 +10,8 @@
   <div class="form-group">
     <div class='form-text-wrap'>
       <label class="text nickname">ニックネーム</label><br/>
-      <%= f.text_field :nickname, class:"input-default", autofocus: true%>
     </div>
-    
+    <%= f.text_field :nickname, class:"input-default", autofocus: true%>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
@@ -58,7 +57,9 @@
           <% end %>
         </div>
       </div>
-      <%= render "devise/shared/links" %>
+      <div class="sign-wrapper">
+        <%= link_to "ログイン", new_session_path(resource_name),class:"btn sign"%><br />
+      </div>
     </div>
 
   </div>
