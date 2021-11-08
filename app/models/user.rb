@@ -19,4 +19,9 @@ class User < ApplicationRecord
     end
     { user: user, sns: sns }
   end
+
+  def self.chart_data
+    order(play_date: :asc).pluck('play_date','total_score').to_h
+  end
+  
 end

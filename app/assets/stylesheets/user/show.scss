@@ -29,6 +29,7 @@
   margin:0 auto;
   margin-bottom:60px;
   font-size:25px;
+  border-bottom: 5px solid red;
   
 }
 .golf-course-name{
@@ -48,4 +49,14 @@
 }
 .score-detail{
   text-decoration: none;
+}
+.score-chart{
+  width:90%;
+  margin:0 auto;
+  
+}
+.chart{
+  margin:0 auto;
+  width:"90%";
+  height:"30%";
 }

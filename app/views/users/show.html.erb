@@ -17,5 +17,10 @@
         </div>
       <% end %>
     <% end %>
+    <div class="score-chart">
+      <%= line_chart @scores.pluck('play_date','total_score').to_h,xtitle:"プレー日",
+        class:"chart",colors:['#b00']%>
+    </div>
+    
   </div>
 </div>
