@@ -1,0 +1,24 @@
+<div class="practice-wrappers">
+  <div class="practice-wrapper">
+    <% if @error != nil%>
+      <%= @error%>
+    <% end %>
+    <div class="video-new">
+      <%=form_with model:@video,class:"practice-form-wrapper" ,local: true do |f|%>
+        <div class="practice-form">
+          <div class="title-wrapper">
+            <label>タイトル（必須）</label><br/>
+            <%= f.text_field :title,class:"title-form",autofocus:true,placeholder:"タイトルを自由に入力してください"%>
+          </div>
+          <div class="youtube-wrapper">
+            <label>YouTubeのURL（必須）</label><br/>
+            <%= f.text_field :youtube_url,class:"youtube-form",placeholder:"YouTubeのURLをペーストしてください"%>
+          </div>
+        </div>
+        <div class="submit-wrapper">
+          <%= f.submit "動画を追加する",class:"practice-submit"%>
+        </div>
+      <% end %>
+    </div >
+  </div>
+</div>

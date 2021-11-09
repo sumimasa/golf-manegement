@@ -1,0 +1,51 @@
+.practice-form{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: brown;
+  height: 80%;
+}
+.video-new{
+  background-color: aqua;
+  width: 90%;
+  height:90%;
+  margin:0 auto;
+}
+.title-wrapper{
+  background-color: cornflowerblue;
+  height:50%;
+  width: 50%;
+}
+.youtube-wrapper{
+  width:50%;
+  height: 50%;
+}
+.title-form{
+  width: 90%;
+  height:30%;
+  padding:20px;
+  font-size: 20px;
+  border:none;
+  border-bottom:10px solid red;
+}
+.youtube-form{
+  width:90%;
+  height:30%;
+  padding:20px;
+  font-size: 20px;
+}
+.practice-form-wrapper{
+  background-color: chocolate;
+  height:80%;
+}
+.practice-submit{
+  background-color: darkblue;
+  width:20%;
+  height: 90%;
+  font-size:30px;
+}
+.submit-wrapper{
+  background-color: cyan;
+  text-align: center;
+  height:10%;
+}

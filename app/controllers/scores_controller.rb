@@ -1,8 +1,7 @@
 class ScoresController < ApplicationController
   before_action :find_params,only:[:show,:edit]
 
-  def index
-  end
+  
 
   def new
     @score = Score.new
