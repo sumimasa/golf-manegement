@@ -1,5 +1,5 @@
 class VideosController < ApplicationController
-  
+  before_action :move_index,only: :show
   def show
     user=User.find(params[:id])
     @videos=user.videos
@@ -31,5 +31,11 @@ class VideosController < ApplicationController
     def video_params
       params.require(:video).permit(:title,:youtube_url).merge(user_id:current_user.id)
     end
-
+    
+    def move_index
+      user=User.find(params[:id])
+      if current_user.id != user.id
+        redirect_to root_path
+      end
+    end
 end

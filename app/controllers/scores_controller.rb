@@ -1,6 +1,6 @@
 class ScoresController < ApplicationController
-  before_action :find_params,only:[:show,:edit]
-
+  before_action :find_params,only:[:show,:edit,:update]
+  before_action :move_index,only:[:show,:edit,:update]
   
 
   def new
@@ -27,7 +27,7 @@ class ScoresController < ApplicationController
   end
 
   def update
-    @score=Score.find(params[:id])
+    
     @score.total_score=insert_total_score(@score)
     if @score.update(score_params)  
       redirect_to user_path(current_user.id)   
@@ -51,5 +51,11 @@ class ScoresController < ApplicationController
 
   def find_params
     @score = Score.find(params[:id])
+  end
+
+  def move_index
+    if current_user.id != @score.user_id
+      redirect_to root_path
+    end
   end
 end
