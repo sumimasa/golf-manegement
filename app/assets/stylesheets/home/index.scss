@@ -27,15 +27,83 @@
   
 }
 .content{
-  border-radius: 30px;
-  font-size:30px;
-  
-  display: block;
-  text-decoration: none;
-  color:white;
-  padding:50px 100px;
-  
+  position: relative;
+    /*ボタンの形状*/
+    display: inline-block;
+    width:100%;
+    max-width: 250px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    outline: none;
 }
+.content span{
+  display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #333;
+    /* 重なりを3Dで表示 */
+    transform-style: preserve-3d;
+    /* アニメーションの設定 数字が少なくなるほど早く回転 */
+    transition: 1s;
+}
+.score span:nth-child(1){
+  background:rgba(54, 194, 54, 0.788);
+  color:#000;
+  transform:rotateX(0deg);
+  transform-origin:0 50% -25px;
+}
+.score:hover span:nth-child(1){
+  transform:rotateX(-90deg);
+}
+.score span:nth-child(2){
+  background:#000;
+  color:#fff;
+  transform:rotateX(90deg);
+  transform-origin:0 50% -25px;
+}
+.score:hover span:nth-child(2){
+  transform:rotateX(0deg);
+}
+.reserve span:nth-child(1){
+  background:rgba(41, 82, 196, 0.774);
+  color:#000;
+  transform:rotateX(0deg);
+  transform-origin:0 50% -25px;
+}
+.reserve:hover span:nth-child(1){
+  transform:rotateX(-90deg);
+}
+.reserve span:nth-child(2){
+  background:#000;
+  color:#fff;
+  transform:rotateX(90deg);
+  transform-origin:0 50% -25px;
+}
+.reserve:hover span:nth-child(2){
+  transform:rotateX(0deg);
+}
+.practice span:nth-child(1){
+  background:rgba(221, 7, 71, 0.897);
+  color:#000;
+  transform:rotateX(0deg);
+  transform-origin:0 50% -25px;
+}
+.practice:hover span:nth-child(1){
+  transform:rotateX(-90deg);
+}
+.practice span:nth-child(2){
+  background:white;
+  color:red;
+  transform:rotateX(90deg);
+  transform-origin:0 50% -25px;
+}
+.practice:hover span:nth-child(2){
+  transform:rotateX(0deg);
+}
+
+
 .bottom-contents{
   display: flex;
   width:100%;
@@ -43,9 +111,18 @@
   margin:0 auto;
   
 }
-.score{
-  background-color:rgba(163, 18, 78, 0.9);
+.bottom-left{
+  width:50%;
+  height:100%;
+  
+  text-align: center;
 }
+.bottom-right{
+  width:50%;
+  height:100%;
+  text-align: center;
+}
+
 .reserve{
   background-color:rgba(45, 42, 204, 0.9)
 }
