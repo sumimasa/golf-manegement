@@ -1,3 +1,9 @@
+
+
+<div class="splash" id="splash">
+</div>
+
+
 <div class="main-wrapper">
   <div class="container">
     <div class="contents">
@@ -5,14 +11,16 @@
         <%= link_to "スコア", new_score_path, class:"content score"%>
       </div>
     </div>
-     <div class="bottom-contents">
-        <div class="bottom-left">
-          <%= link_to "GDOで予約","https://reserve.golfdigest.co.jp/",class:"content reserve"  %>
-        </div>
-        <div class="bottom-right">
-          <%= link_to "練習まとめ",video_path(current_user.id),class:"content practice" %>
-        </div>
+    <div class="bottom-contents">
+      <div class="bottom-left">
+        <%= link_to "GDOで予約","https://reserve.golfdigest.co.jp/",class:"content reserve"  %>
+      </div>
+      <div class="bottom-right">
+        <%= link_to "練習まとめ",video_path(current_user.id),class:"content practice" %>
       </div>
     </div>
   </div>
 </div>
+
+
+
