@@ -1,27 +1,35 @@
-<div class="practice-wrappers">
-  <div class="practice-wrapper">
-    <div class="practice-top">
-      <div class="practice-title">
-        練習動画一覧
-      </div >
-      <div class="video-add">
-        <%=link_to "追加する",new_video_path,class:"video-link"%>
+<div id="splash-new">
+  <div id="splash-new-logo"></div>
+</div>
+<div class="splashbg1"></div>
+<div class="splashbg2"></div>
+
+<div id="new-container">
+  <div class="practice-wrappers">
+    <div class="practice-wrapper">
+      <div class="practice-top">
+        <div class="practice-title">
+          練習動画一覧
+        </div >
+        <div class="video-add">
+          <%=link_to "追加する",new_video_path,class:"video-link"%>
+        </div>
       </div>
-    </div>
-    <div class="practice-movie-lists">
-      <% @videos.each do |video|%>
-        <div class="practice-movie-list">
-          <p class="movie-title"><%=video.title%></p>
-          <div class="practice-movie">
-            <div class="movie">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/<%=video.youtube_url.last(11)%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>youtubeの動画を埋め込む</iframe>
+      <div class="practice-movie-lists">
+        <% @videos.each do |video|%>
+          <div class="practice-movie-list">
+            <p class="movie-title"><%=video.title%></p>
+            <div class="practice-movie">
+              <div class="movie">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/<%=video.youtube_url.last(11)%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>youtubeの動画を埋め込む</iframe>
+              </div>
+            </div>
+            <div class="movie-delete">
+              <%= link_to "削除する", video_path(video.id), method: :delete %>
             </div>
           </div>
-          <div class="movie-delete">
-            <%= link_to "削除する", video_path(video.id), method: :delete %>
-          </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

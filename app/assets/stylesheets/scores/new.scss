@@ -30,9 +30,12 @@
 .form-message{
   
   padding-left:10px;
-  border:none;
+  
   width:70%;
   height:50px;
+}
+.form-message:hover{
+  border:3px solid lightblue;
 }
 .form-input{
   width:100%;
@@ -55,32 +58,32 @@
 
 .total-score{
   display: flex;
-  
-  
   height:60%;
   width:100%;
 }
 .in-score{
-  background-color: coral;
+  background-color: white;
   height:100%;
   width:50%;
   display: flex;
   flex-direction: column;
   overflow: scroll;
+  border:3px solid black;
 }
 .out-score{
-  background-color: khaki;
+  background-color: white;
   height:100%;
   width:50%;
   overflow: scroll;
+  border:3px solid black;
 }
 .select-box{
   width:200px;
   height:30px;
-  color:pink;
-  border:1px solid blue;
+  color:white;
+  
   border-radius: 10px;
-  background-color: cyan;
+  background-color: rgb(0, 0, 0);
 }
 .select-box:hover{
   color:blue;
@@ -121,27 +124,25 @@
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background: rgb(224, 233, 101);
+	background: rgb(39, 42, 48);
 	text-align:center;
 	color:#fff;
+  display:flex;
+  align-items: center;
+}
+#splash-new-logo{
+  margin:0 auto;
+  height:30%;
+  width:50%;
+  background-image: image-url("twitter_header_photo_2.png");
+  background-repeat: no-repeat;
+  background-position: center 55%;
 }
 
-#splash-new-logo {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-  width:40%;
-  height:30%;
-	transform: translate(-50%, -50%);
-  font-family: 'IM Fell DW Pica SC', serif;
-  font-size:100px;
-  color:rgb(0, 102, 255);
-  padding:50% 0;
-}
 /*========= 画面遷移のためのCSS ===============*/
 
 body{
-  background: rgb(224, 233, 101);/*遷移アニメーションと同じ色を指定*/
+  background:  rgb(39, 42, 48);/*遷移アニメーションと同じ色を指定*/
 }
 
 body.appear{
@@ -174,7 +175,7 @@ body.appear .splashbg1{
     top: 0;
 	left:50%;
     transform: scaleX(1);
-    background: rgb(224, 233, 101);
+    background: rgb(39, 42, 48);
 }
 
 @keyframes PageAnime{
@@ -205,7 +206,7 @@ body.appear .splashbg2{
     top: 0;
 	right:50%;
     transform: scaleX(1);
-    background: rgb(224, 233, 101);
+    background: rgb(39, 42, 48);
 }
 
 @keyframes PageAnime2{

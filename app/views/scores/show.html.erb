@@ -1,163 +1,171 @@
-<div class="detail-wrapper">
-  <div class="detail-container">
-    <div class="detail-top">
-      <h1 class="detail-title"><%= @score.user.nickname%>さんのスコア一覧</h1>
-      <%= link_to "編集する",edit_score_path(@score.id),class:"detail-edit"%>
-    </div>
-    <div class="detail-score">
-      <div class="in-score-detail">
-        <div class="in-hole">
-          <div class="in-hole-number">
-            <p>1H</p>
+<div id="splash-new">
+  <div id="splash-new-logo"></div>
+</div>
+<div class="splashbg1"></div>
+<div class="splashbg2"></div>
+
+<div id="new-container">
+  <div class="detail-wrapper">
+    <div class="detail-container">
+      <div class="detail-top">
+        <h1 class="detail-title"><%= @score.user.nickname%>さんのスコア一覧</h1>
+        <%= link_to "編集する",edit_score_path(@score.id),class:"detail-edit"%>
+      </div>
+      <div class="detail-score">
+        <div class="in-score-detail">
+          <div class="in-hole">
+            <div class="in-hole-number">
+              <p>1H</p>
+            </div>
+            <div class="in-hole-score">
+              <%= @score.score_1h%>
+            </div>
           </div>
-          <div class="in-hole-score">
-            <%= @score.score_1h%>
+          <div class="in-hole">
+            <div class="in-hole-number">
+              <p>2H</p>
+            </div>
+            <div class="in-hole-score">
+              <%= @score.score_2h%>
+            </div>
+          </div>
+          <div class="in-hole">
+            <div class="in-hole-number">
+              <p>3H</p>
+            </div>
+            <div class="in-hole-score">
+              <%= @score.score_3h%>
+            </div>
+          </div>
+          <div class="in-hole">
+            <div class="in-hole-number">
+              <p>4H</p>
+            </div>
+            <div class="in-hole-score">
+              <%= @score.score_4h%>
+            </div>
+          </div>
+          <div class="in-hole">
+            <div class="in-hole-number">
+              <p>5H</p>
+            </div>
+            <div class="in-hole-score">
+              <%= @score.score_5h%>
+            </div>
+          </div>
+          <div class="in-hole">
+            <div class="in-hole-number">
+              <p>6H</p>
+            </div>
+            <div class="in-hole-score">
+              <%= @score.score_6h%>
+            </div>
+          </div>
+          <div class="in-hole">
+            <div class="in-hole-number">
+              <p>7H</p>
+            </div>
+            <div class="in-hole-score">
+              <%= @score.score_7h%>
+            </div>
+          </div>
+          <div class="in-hole">
+            <div class="in-hole-number">
+              <p>8H</p>
+            </div>
+            <div class="in-hole-score">
+              <%= @score.score_8h%>
+            </div>
+          </div>
+          <div class="in-hole">
+            <div class="in-hole-number">
+              <p>9H</p>
+            </div>
+            <div class="in-hole-score">
+              <%= @score.score_9h%>
+            </div>
           </div>
         </div>
-        <div class="in-hole">
-          <div class="in-hole-number">
-            <p>2H</p>
+        <div class="out-score-detail">
+          <div class="out-hole">
+            <div class="out-hole-number">
+              <p>10H</p>
+            </div>
+            <div class="in-hole-score">
+              <%= @score.score_10h%>
+            </div>
           </div>
-          <div class="in-hole-score">
-            <%= @score.score_2h%>
+          <div class="out-hole">
+            <div class="out-hole-number">
+              <p>11H</p>
+            </div>
+            <div class="out-hole-score">
+              <%= @score.score_11h%>
+            </div>
           </div>
-        </div>
-        <div class="in-hole">
-          <div class="in-hole-number">
-            <p>3H</p>
+          <div class="out-hole">
+            <div class="out-hole-number">
+              <p>12H</p>
+            </div>
+            <div class="in-hole-score">
+              <%= @score.score_12h%>
+            </div>
           </div>
-          <div class="in-hole-score">
-            <%= @score.score_3h%>
+          <div class="out-hole">
+            <div class="out-hole-number">
+              <p>13H</p>
+            </div>
+            <div class="out-hole-score">
+              <%= @score.score_13h%>
+            </div>
           </div>
-        </div>
-        <div class="in-hole">
-          <div class="in-hole-number">
-            <p>4H</p>
+          <div class="out-hole">
+            <div class="out-hole-number">
+              <p>14H</p>
+            </div>
+            <div class="in-hole-score">
+              <%= @score.score_14h%>
+            </div>
           </div>
-          <div class="in-hole-score">
-            <%= @score.score_4h%>
+          <div class="out-hole">
+            <div class="out-hole-number">
+              <p>15H</p>
+            </div>
+            <div class="out-hole-score">
+              <%= @score.score_15h%>
+            </div>
           </div>
-        </div>
-        <div class="in-hole">
-          <div class="in-hole-number">
-            <p>5H</p>
+          <div class="out-hole">
+            <div class="out-hole-number">
+              <p>16H</p>
+            </div>
+            <div class="in-hole-score">
+              <%= @score.score_16h%>
+            </div>
           </div>
-          <div class="in-hole-score">
-            <%= @score.score_5h%>
+          <div class="out-hole">
+            <div class="out-hole-number">
+              <p>17H</p>
+            </div>
+            <div class="out-hole-score">
+              <%= @score.score_17h%>
+            </div>
           </div>
-        </div>
-        <div class="in-hole">
-          <div class="in-hole-number">
-            <p>6H</p>
-          </div>
-          <div class="in-hole-score">
-            <%= @score.score_6h%>
-          </div>
-        </div>
-        <div class="in-hole">
-          <div class="in-hole-number">
-            <p>7H</p>
-          </div>
-          <div class="in-hole-score">
-            <%= @score.score_7h%>
-          </div>
-        </div>
-        <div class="in-hole">
-          <div class="in-hole-number">
-            <p>8H</p>
-          </div>
-          <div class="in-hole-score">
-            <%= @score.score_8h%>
-          </div>
-        </div>
-        <div class="in-hole">
-          <div class="in-hole-number">
-            <p>9H</p>
-          </div>
-          <div class="in-hole-score">
-            <%= @score.score_9h%>
+          <div class="out-hole">
+            <div class="out-hole-number">
+              <p>18H</p>
+            </div>
+            <div class="in-hole-score">
+              <%= @score.score_18h%>
+            </div>
           </div>
         </div>
       </div>
-      <div class="out-score-detail">
-        <div class="out-hole">
-          <div class="out-hole-number">
-            <p>10H</p>
-          </div>
-          <div class="in-hole-score">
-            <%= @score.score_10h%>
-          </div>
+      <div class="my-memo">
+        <h1 class="round-memo">ラウンドメモ</h1>
+        <div class="memo-display">
+          <%= @score.memo %>
         </div>
-        <div class="out-hole">
-          <div class="out-hole-number">
-            <p>11H</p>
-          </div>
-          <div class="out-hole-score">
-            <%= @score.score_11h%>
-          </div>
-        </div>
-        <div class="out-hole">
-          <div class="out-hole-number">
-            <p>12H</p>
-          </div>
-          <div class="in-hole-score">
-            <%= @score.score_12h%>
-          </div>
-        </div>
-        <div class="out-hole">
-          <div class="out-hole-number">
-            <p>13H</p>
-          </div>
-          <div class="out-hole-score">
-            <%= @score.score_13h%>
-          </div>
-        </div>
-        <div class="out-hole">
-          <div class="out-hole-number">
-            <p>14H</p>
-          </div>
-          <div class="in-hole-score">
-            <%= @score.score_14h%>
-          </div>
-        </div>
-        <div class="out-hole">
-          <div class="out-hole-number">
-            <p>15H</p>
-          </div>
-          <div class="out-hole-score">
-            <%= @score.score_15h%>
-          </div>
-        </div>
-        <div class="out-hole">
-          <div class="out-hole-number">
-            <p>16H</p>
-          </div>
-          <div class="in-hole-score">
-            <%= @score.score_16h%>
-          </div>
-        </div>
-        <div class="out-hole">
-          <div class="out-hole-number">
-            <p>17H</p>
-          </div>
-          <div class="out-hole-score">
-            <%= @score.score_17h%>
-          </div>
-        </div>
-        <div class="out-hole">
-          <div class="out-hole-number">
-            <p>18H</p>
-          </div>
-          <div class="in-hole-score">
-            <%= @score.score_18h%>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="my-memo">
-      <h1 class="round-memo">ラウンドメモ</h1>
-      <div class="memo-display">
-        <%= @score.memo %>
       </div>
     </div>
   </div>

@@ -12,7 +12,6 @@
   </head>
 
   <body>
-    
     <header>
       <div class="left-content">
         <% if current_page?(root_path)%>
@@ -25,16 +24,18 @@
         
       </div>
       <div class="right-content">
-        <div class="user-name">
-          <% if user_signed_in?%>
-            <%= link_to "#{current_user.nickname}さんのスコア一覧", user_path(current_user.id),class:"user-score"%>
-          <% end %>
-        </div>
-        <div class="logout-wrap">
-          <% if user_signed_in?%>
+        <% if user_signed_in?%>
+          <div class="user-name">
+            <% if current_page?(user_path(current_user.id)) %>
+              <%= link_to "スコア記入へ",new_score_path,class:"user-score"%>
+            <% else %>
+              <%= link_to "#{current_user.nickname}さんのスコア一覧", user_path(current_user.id),class:"user-score"%>
+            <% end %>
+          </div>
+          <div class="logout-wrap">
             <%= link_to 'ログアウト',destroy_user_session_path,class:"logout",method: :delete%>
-          <% end %>
-        </div>
+          </div>
+        <% end %>
       </div>
     </header>
     <%= yield %>

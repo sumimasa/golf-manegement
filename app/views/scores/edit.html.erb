@@ -1,12 +1,20 @@
-<div class="new-scores">
-  <div class="course-names">
-    <div class="form-title" id="list">
-      <% if @error == nil%>
-        <h1 class="course-name">スコア・ラウンドメモ編集画面</h1>
-      <% else %>
-        <h1 class="error-message"><%= @error %></h1>
-      <% end %>
+<div id="splash-new">
+  <div id="splash-new-logo"></div>
+</div>
+<div class="splashbg1"></div>
+<div class="splashbg2"></div>
+
+<div id="new-container">
+  <div class="new-scores">
+    <div class="course-names">
+      <div class="form-title" id="list">
+        <% if @error == nil%>
+          <h1 class="course-name">スコア・ラウンドメモ編集画面</h1>
+        <% else %>
+          <h1 class="error-message"><%= @error %></h1>
+        <% end %>
+      </div>
+      <%= render partial: "score_form", locals:{score:@score}%>
     </div>
-    <%= render partial: "score_form", locals:{score:@score}%>
   </div>
 </div>

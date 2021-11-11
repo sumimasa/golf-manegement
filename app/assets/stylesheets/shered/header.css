@@ -83,7 +83,34 @@ header{
   color:white;
   font-size:20px;
 }
-.user-score{
+.user-score,
+.logout{
   text-decoration: none;
   color:white;
+  display:block;
+  position:relative;
+}
+.user-score:hover,
+.logout:hover{
+  color:rgb(255, 0, 255)
+}
+.user-score::after,
+.logout::after{
+  content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    /*線の形状*/
+    width: 80%;
+    height: 2px;
+    background:red;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: center top;/*上部中央基点*/
+}
+.logout:hover::after,
+.user-score:hover::after{
+  transform:scale(1,1);
 }
