@@ -1,3 +1,3 @@
 $(function(){
-  $('#splash').delay(1500).fadeOut('slow'); 
+  $('#splash').delay(1).fadeOut('slow'); 
 });

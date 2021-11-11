@@ -15,12 +15,19 @@
     
     <header>
       <div class="left-content">
-        <%= link_to "GolfManegiment",root_path,class:"title" %>
+        <% if current_page?(root_path)%>
+          <p class="title-p">GolfManegiment</p>
+        <% else %>
+          <%= link_to root_path,class:"title" do%>
+            <span>GolfManegiment</span><span>トップへ</span>
+          <% end %>
+        <% end %>
+        
       </div>
       <div class="right-content">
         <div class="user-name">
           <% if user_signed_in?%>
-          <%= link_to "#{current_user.nickname}さんのスコア", user_path(current_user.id),class:"user-score"%>
+            <%= link_to "#{current_user.nickname}さんのスコア一覧", user_path(current_user.id),class:"user-score"%>
           <% end %>
         </div>
         <div class="logout-wrap">
