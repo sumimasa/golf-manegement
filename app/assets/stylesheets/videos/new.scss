@@ -46,10 +46,13 @@
   height:80%;
 }
 .practice-submit{
-  
-  width:20%;
-  height: 90%;
+  background-color: rgb(255, 81, 0);
+  width:30%;
+  height: 100%;
   font-size:30px;
+  padding-bottom:5px;
+  border-radius: 10px;
+  
 }
 .submit-wrapper{
   
@@ -58,6 +61,7 @@
 }
 .practice-message{
   font-size:30px;
+  color:rgb(255, 81, 0);
   text-align:center;
 }
 .practice-error-message{

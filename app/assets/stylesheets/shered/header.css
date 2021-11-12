@@ -1,9 +1,9 @@
 header{
   display:flex;
   justify-content: space-between;
-  
+  background-color: rgb(74, 141, 71);
   width: 100vw;
-  height:5vh;
+  height:50px;
   font-family: 'IM Fell DW Pica SC', serif;
   position: fixed;
   top:0px;
@@ -92,7 +92,7 @@ header{
 }
 .user-score:hover,
 .logout:hover{
-  color:rgb(255, 0, 255)
+  color:rgb(170, 86, 170)
 }
 .user-score::after,
 .logout::after{

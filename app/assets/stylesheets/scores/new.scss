@@ -7,14 +7,24 @@
   background-position: center 55%;
   display: flex;
   align-items: center;
-  
 }
 .course-names{
   width:90%;
-  height:90%;
+  height:80%;
   
   margin:0 auto;
   
+}
+.course-name{
+  width:55%;
+  margin:0 auto;
+  background-color: aqua;
+  border-radius: 10px;
+}
+.error-message{
+  width:70%;
+  background-color: rgb(219, 230, 230);
+  margin:0 auto;
 }
 .form-title{
   
@@ -87,6 +97,9 @@
 }
 .select-box:hover{
   color:blue;
+}
+.select-play-date{
+  background-color: red;
 }
 .input-score{
   display: flex;
