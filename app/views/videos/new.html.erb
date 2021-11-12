@@ -6,10 +6,12 @@
 
 <div id="new-container">
   <div class="practice-wrappers">
-    <div class="practice-wrapper">
-      <% if @error != nil%>
-        <%= @error%>
-      <% end %>
+    <div class="practice-new-wrapper">
+      <% if @error == nil%>
+          <h1 class="practice-message">練習動画追加</h1>
+        <% else %>
+          <h1 class="practice-error-message"><%= @error %></h1>
+        <% end %>
       <div class="video-new">
         <%=form_with model:@video,class:"practice-form-wrapper" ,local: true do |f|%>
           <div class="practice-form">

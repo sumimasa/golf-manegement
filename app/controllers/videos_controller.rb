@@ -14,7 +14,7 @@ class VideosController < ApplicationController
     if @video.valid?
       redirect_to video_path(current_user.id)  
     else 
-      @error="正しく入力してください"
+      @error="エラー：入力内容を確認してください"
       render :new
     end
 

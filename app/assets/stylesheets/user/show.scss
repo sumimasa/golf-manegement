@@ -12,11 +12,15 @@
 }
 
 .list-wrapper{
-  height:80%;
+  height:90%;
   width:70%;
   background-color: white;
-  overflow: scroll;
+  padding-top:3%;
   
+}
+.list-score{
+  height:50%;
+  overflow: scroll;
 }
 .list-user{
   text-align: center;

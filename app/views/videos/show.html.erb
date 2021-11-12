@@ -12,7 +12,9 @@
           練習動画一覧
         </div >
         <div class="video-add">
-          <%=link_to "追加する",new_video_path,class:"video-link"%>
+          <%=link_to new_video_path,class:"video-link" do%>
+            <span>追加する</span>
+          <% end %>
         </div>
       </div>
       <div class="practice-movie-lists">
@@ -25,7 +27,7 @@
               </div>
             </div>
             <div class="movie-delete">
-              <%= link_to "削除する", video_path(video.id), method: :delete %>
+              <%= link_to "削除する", video_path(video.id),class:"movie-delete-link", method: :delete %>
             </div>
           </div>
         <% end %>

@@ -11,7 +11,7 @@
 .practice-wrapper{
   width:90%;
   height:90%;
-  background-color: bisque;
+  background-color: rgb(235, 233, 231);
   margin:0 auto;
   margin-top:30px;
 }
@@ -27,8 +27,62 @@
   font-size: 50px;
 }
 .video-link{
-  font-size: 50px;
-  text-decoration: none;
+  font-size:30px;
+  position:relative;
+    /*リンクの形状*/ 
+	color:#333;
+    padding: 10px 50px 10px 30px;
+	display:inline-block;
+    text-decoration: none;
+    outline: none;
+}
+.video-link::before,
+.video-link::after{
+	content:'';
+    /*絶対配置で線の位置を決める*/
+	position:absolute;
+	z-index:1;
+	bottom:0;
+	left:0;
+     /*線の形状*/   
+	background:#333;
+	width:100%;
+	height:5px;
+    /*アニメーションの指定*/
+	transition:all 0.3s ease-in-out;
+}
+
+ /*hover時に伸びる線の形状*/   
+.video-link::after{
+	width:0;
+	background:rgb(156, 53, 53);
+}
+
+ /*hover時に100%に伸びる*/   
+.video-link:hover::after {
+	width:100%;
+}
+
+ /*矢印の設定*/   
+.video-link span::after {
+    content: '';
+    /*絶対配置で矢印の位置を決める*/
+    position: absolute;
+    top: 1.3em;
+    right: 20px;
+    /*矢印の形状*/   
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    transform: rotate(45deg);
+    /*アニメーションの指定*/
+    transition: all .3s;
+}
+
+/*hover時に矢印が移動*/   
+.video-link:hover span::after {
+	right:15px;
 }
 .practice-movie-lists{
   width:90%;
@@ -63,4 +117,52 @@
   text-align: right;
   width:90%;
   margin:0 auto;
+}
+.movie-delete-link{
+  /*線の基点とするためrelativeを指定*/
+position:relative;
+  /*ボタンの形状*/  
+color:#333;
+  padding: 10px 30px;
+display:inline-block;
+  text-decoration: none;
+  outline: none;
+}
+
+/*線の設定*/
+.movie-delete-link::before,
+.movie-delete-link::after {
+content:'';
+  /*絶対配置で線の位置を決める*/
+position:absolute;
+  /*事前に出現させる線の形状*/
+border:solid #333;
+width:10px;
+height:10px;
+  /*アニメーションの指定*/
+transition:all 0.3s ease-in-out;
+}
+
+.movie-delete-link::before{
+  /*事前に出現させる線の位置*/
+top:0;
+left:0;
+  /*事前に出現させる線の形状*/
+border-width:2px 0 0 2px;
+}
+
+.movie-delete-link::after{
+  /*事前に出現させる線の位置*/
+bottom:0;
+right:0;
+  /*事前に出現させる線の形状*/
+border-width:0 2px 2px 0;
+}
+
+/*hoverした際の線の形状*/
+.movie-delete-link:hover::before,
+.movie-delete-link:hover::after{
+width:calc(100% - 2px);
+height:calc(100% - 2px);
+border-color:#666
 }
