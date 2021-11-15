@@ -15,14 +15,9 @@
   <body>
     <header>
       <div class="left-content">
-        <% if current_page?(root_path)%>
-          <p class="title-p">GolfManegement</p>
-        <% else %>
-          <%= link_to root_path,class:"title" do%>
-            <span>GolfManegement</span><span>トップへ</span>
-          <% end %>
-        <% end %>
-        
+        <div class="header-title">
+          <%= link_to "GolfManegement",root_path,class:"title-p"%>
+        </div>
       </div>
       <div class="right-content">
         <% if user_signed_in?%>

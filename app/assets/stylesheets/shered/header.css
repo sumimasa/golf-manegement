@@ -22,58 +22,18 @@ header{
 .left-content{
   width:30%;
   height:100%;
-  
-  
+  padding-left:30px;
+  display: flex;
+  align-items: center;
 }
+
+
 .title-p{
   font-size:40px;
   color:white;
-  
-}
-.title{
-  margin:0 50px;
-  position: relative;
-  color:white;
-  font-size: 40px;
-  height:100%;
-  width:30%;
-  text-decoration: none;
-  min-width: 210px;
-  display: inline-block;
-  outline:none;
-  transition: all .2s;
-}
-/*hoverした際の変化*/
-.title:hover{
-  color:#fff;
+  text-align: center;
 }
 
-.title span{
-    /*絶対配置でテキストの位置を決める*/
-	position: absolute;
-	left: 50%;
-	top:50%;
-    transform:translate(-50%,-50%);
-    /*アニメーションの指定*/
-    transition: all .5s;
-  /*ブロック要素にしてテキスト折り返しなし*/  
-	display: block;
-	white-space: nowrap;
-}
-
-/*差し替わるテキストの設定*/
-.title span:nth-child(2){
-	opacity:0;/*透過0に*/
-}
-
-/*hoverするとテキストが入れ替わる設定*/
-.title:hover span:nth-child(1){
-	opacity:0;/*透過0に*/
-}
-
-.title:hover span:nth-child(2){
-	opacity:1;/*不透明に*/
-}
 .user-name{
   color:white;
   padding-right:20px;
@@ -84,18 +44,21 @@ header{
   font-size:20px;
 }
 .user-score,
-.logout{
+.logout,
+.title-p{
   text-decoration: none;
   color:white;
   display:block;
   position:relative;
 }
 .user-score:hover,
-.logout:hover{
+.logout:hover,
+.title-p:hover{
   color:rgb(170, 86, 170)
 }
 .user-score::after,
-.logout::after{
+.logout::after,
+.title-p::after{
   content: '';
     /*絶対配置で線の位置を決める*/
     position: absolute;
@@ -111,6 +74,32 @@ header{
     transform-origin: center top;/*上部中央基点*/
 }
 .logout:hover::after,
-.user-score:hover::after{
+.user-score:hover::after,
+.title-p:hover::after{
   transform:scale(1,1);
+}
+
+/*タブレット表示時*/
+@media (max-width: 1024px) {
+  .title-p{
+    font-size:20px;
+  }
+  .user-score{
+    font-size:10px;
+  }
+  .logout{
+    font-size :10px;
+  }
+}
+
+@media (max-width:599px){
+  .title-p{
+    font-size:15px;
+  }
+  .user-score{
+    font-size:5px;
+  }
+  .logout{
+    font-size:5px;
+  }
 }
