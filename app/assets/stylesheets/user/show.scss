@@ -65,3 +65,19 @@
   width:"90%";
   height:"30%";
 }
+
+@media (max-width:1024px){
+  .my-wrapper{
+    background-image:image-url("al-bennett-M8488pGecoo-unsplash.jpg");
+    background-size:cover;
+  }
+  .golf-course-name,.users-score,.play-day{
+    font-size:15px;
+  }
+}
+
+@media (max-width:599px){
+  .golf-course-name,.users-score,.play-day{
+    font-size: 10px;
+  }
+}

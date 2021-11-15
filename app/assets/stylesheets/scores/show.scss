@@ -121,3 +121,27 @@ opacity:1;
   border:5px solid rgb(255, 174, 0);
   
 }
+
+@media (max-width:1024px){
+  .detail-wrapper{
+    background-size:cover;
+  }
+  .detail-title,.detail-edit{
+    font-size:20px
+  }
+}
+
+@media (max-width:599px){
+  .detail-wrapper{
+    background-image:image-url("juan-gomez-uBqykD-ejsY-unsplash.jpg")
+  }
+  .in-hole,.out-hole{
+    flex-direction: column;
+    text-align:center;
+  }
+  .detail-title,.detail-edit{
+    font-size:10px;
+  }
+  
+ 
+}
