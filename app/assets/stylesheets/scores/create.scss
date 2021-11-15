@@ -36,6 +36,16 @@
   
   
 }
+.top-button{
+  width:50%;
+  
+  text-align: center;
+}
+.my-page-button{
+  width:50%;
+  
+  text-align:center
+}
 .to{
   text-decoration: none;
   color:black;
@@ -48,4 +58,36 @@
 }
 .mypage{
   background-color: rgb(222, 236, 96);
+}
+
+@media(max-width:1024px){
+  
+  .scores-wrapper{
+    background-image:image-url("courtney-cook-Nka1wVAQWa4-unsplash.jpg");
+    background-size: cover;
+    background-position:60% 55%;
+  }
+
+  .top-mypage{
+    width:70%;
+  }
+}
+
+@media (max-width:599px){
+  .scores-wrapper{
+    background-image:image-url("domenico-loia-cNBf3ur8vEg-unsplash.jpg")
+  }
+  .scores{
+    width:80%;
+  }
+  .top-mypage{
+    width:100%;
+  }
+  .scores h1{
+    font-size:30px;
+    color:black;
+  }
+  .scores h2{
+    font-size:30px;
+  }
 }
