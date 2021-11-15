@@ -1,7 +1,7 @@
 class Count < ActiveHash::Base
   self.data = [
     
-    { id: 1, name: '0打（ハーフの場合)', count: 0 },
+    { id: 1, name: 'ハーフ', count: 0 },
     { id: 2, name: '1打', count: 1 },
     { id: 3, name: '2打', count: 2 },
     { id: 4, name: '3打', count: 3 },
