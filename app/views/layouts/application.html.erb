@@ -25,7 +25,7 @@
             <% if current_page?(user_path(current_user.id)) %>
               <%= link_to "スコア記入へ",new_score_path,class:"user-score"%>
             <% else %>
-              <%= link_to "#{current_user.nickname}さんのスコア一覧", user_path(current_user.id),class:"user-score"%>
+              <%= link_to "スコア一覧", user_path(current_user.id),class:"user-score"%>
             <% end %>
           </div>
           <div class="logout-wrap">
