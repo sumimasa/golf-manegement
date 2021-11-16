@@ -142,9 +142,9 @@
   align-items: center;
 }
 #splash-new-logo{
-  margin:0 auto;
+  
   height:30%;
-  width:50%;
+  width:100%;
   background-image: image-url("twitter_header_photo_2.png");
   background-repeat: no-repeat;
   background-position: center 55%;
@@ -261,13 +261,10 @@ body.appear #new-container{
 @media (max-width:1240px){
   .main-wrapper{
     background-image: image-url("domenico-loia-cNBf3ur8vEg-unsplash.jpg");
-    
+    background-size: cover;
   }
 
-  #splash-new-logo{
-    width:100%;
-    background-size:100%;
-  }
+  
 }
 
 @media (max-width:599px){
