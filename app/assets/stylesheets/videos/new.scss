@@ -68,3 +68,41 @@
   font-size:30px;
   text-align: center;
 }
+@media (max-width:1024px){
+  .title-form{
+    font-size:15px;
+  }
+  .youtube-form{
+    font-size:15px;
+  }
+  
+  .practice-submit{
+    width:50%;
+  }
+}
+@media (max-width:599px){
+  .practice-form{
+    flex-direction: column;
+    text-align:center;
+  }
+  .title-wrapper,.youtube-wrapper{
+    font-size: 10px;
+    width:100%;
+    
+  }
+  .title-form,.youtube-form{
+    font-size: 10px;
+    width:70%;
+  }
+  .practice-submit{
+    font-size:15px;
+    padding:10px 0;
+  }
+  .video-new{
+    margin-top:10px;
+    
+  }
+  .submit-wrapper{
+    margin-top:10px;
+  }
+}
