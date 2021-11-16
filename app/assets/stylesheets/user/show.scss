@@ -16,10 +16,10 @@
   width:70%;
   background-color: white;
   padding-top:3%;
-  
+  padding-bottom:20px;
 }
 .list-score{
-  height:50%;
+  height:45%;
   overflow: scroll;
 }
 .list-user{
@@ -62,8 +62,8 @@
 }
 .chart{
   margin:0 auto;
-  width:"90%";
-  height:"30%";
+  width:90%;
+  height:30%;
 }
 
 @media (max-width:1024px){
