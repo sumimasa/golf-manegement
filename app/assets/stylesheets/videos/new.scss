@@ -67,6 +67,7 @@
 .practice-error-message{
   font-size:30px;
   text-align: center;
+  color:red;
 }
 @media (max-width:1024px){
   .title-form{
@@ -104,5 +105,8 @@
   }
   .submit-wrapper{
     margin-top:10px;
+  }
+  .practice-error-message,.practice-message{
+    font-size:15px;
   }
 }
