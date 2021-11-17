@@ -63,9 +63,9 @@ gem 'omniauth-google-oauth2'
 gem "omniauth-rails_csrf_protection"
 gem 'omniauth', '~>1.9.1'
 gem 'font-awesome-rails'
-gem 'rakuten_web_service'
+
 gem 'active_hash'
-gem 'google-api-client', '0.9.20', require: 'google/apis/youtube_v3'
-gem 'haml-rails'
-gem 'erb2haml'
+
+
+
 gem 'jquery-rails'
