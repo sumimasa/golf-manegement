@@ -13,7 +13,7 @@ class ScoresController < ApplicationController
       @score.total_score = insert_total_score(@score)
       @score.save
     else
-      @error = 'エラー：入力内容を確認してください'
+      @error = 'ゴルフ場名・日付は必須です'
       render :new
     end
   end
