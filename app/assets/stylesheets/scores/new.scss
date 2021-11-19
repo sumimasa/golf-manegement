@@ -142,7 +142,39 @@
 .modal-open{
   text-decoration: none;
   color:white;
-  
+  position:relative;
+  overflow:hidden;
+  background-color: #333;
+  padding:10px 30px;
+  outline:none;
+  transition:ease .2s;
+  border-radius: 5px;
+}
+.modal-open span{
+  position:relative;
+  z-index:3;
+  color:#fff;
+}
+.modal-open:hover span{
+  color:#fff;
+}
+.modal-open:before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:2;
+  background-color: blue;
+  width:100%;
+  height:100%;
+  transition:transform .6s cubic-bezier(0.8,0,0.2,1)0s;
+  transform:scale(0,1);
+  transform-origin:right top;
+  border-radius: 5px;
+}
+.modal-open:hover:before{
+  transform-origin:left top;
+  transform:scale(1,1);
 }
 /*infoエリアをはじめは非表示*/
 #info{
@@ -208,4 +240,11 @@
   .form-message{
     font-size:10px;
   }
+  .modal-open{
+    padding:5px 15px;
+  }
+  .score-modal{
+    width:50%;
+  }
+  
 }
