@@ -15,12 +15,22 @@
   height:90%;
   width:70%;
   background-color: white;
-  padding-top:3%;
+  
   padding-bottom:20px;
 }
+.use-message{
+  background-color: rgb(74, 141, 71);
+  height:50px;
+  width:100%;
+  text-align: center;
+  font-size:20px;
+  padding:10px;
+  color:white;
+}
 .list-score{
-  height:45%;
+  height:40%;
   overflow: scroll;
+  padding-top:10px;
 }
 .list-user{
   text-align: center;
@@ -77,7 +87,7 @@
 }
 
 @media (max-width:599px){
-  .golf-course-name,.users-score,.play-day{
+  .golf-course-name,.users-score,.play-day,.use-message{
     font-size: 10px;
   }
 }

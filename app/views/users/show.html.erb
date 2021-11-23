@@ -3,6 +3,9 @@
 
   <div class="my-wrapper">
     <div class="list-wrapper">
+      <div class="use-message">
+        各スコアを選択するとスコアの詳細を表示します
+      </div>
       <div class="list-score">
         <% @scores.each do |score| %>
           <%= link_to score_path(score.id) ,class:"score-detail" do%>

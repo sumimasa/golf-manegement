@@ -51,11 +51,7 @@ header{
   display:block;
   position:relative;
 }
-.user-score:hover,
-.logout:hover,
-.title-p:hover{
-  color:rgb(170, 86, 170)
-}
+
 .user-score::after,
 .logout::after,
 .title-p::after{
