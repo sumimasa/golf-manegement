@@ -35,11 +35,21 @@ pass:masaki190
 # 課題解決方法
 ・スコアの管理は記入、編集ができるようにしました
 
+[![Image from Gyazo](https://i.gyazo.com/846d6e8dd79e72e5c851fe39456e9e3d.jpg)](https://gyazo.com/846d6e8dd79e72e5c851fe39456e9e3d)
+
+[![Image from Gyazo](https://i.gyazo.com/8e37563a1cc92fce8aab21c14167df72.jpg)](https://gyazo.com/8e37563a1cc92fce8aab21c14167df72)
+
 ・メモも記入、編集ができるようにしました。
 
 ・スコアの変動を折線グラフで見れるようにしました。
 
+[![Image from Gyazo](https://i.gyazo.com/2531b29f864747bd16258414a23d16f1.jpg)](https://gyazo.com/2531b29f864747bd16258414a23d16f1)
+
 ・練習、ホールで見たい動画をYouTubeでリンクをコピーし保存できるようにしました。その際動画の目的がわかるようにタイトルを付けれるようにしました。
+
+[![Image from Gyazo](https://i.gyazo.com/3494c5c249ec86aa58e8643a96368ecf.jpg)](https://gyazo.com/3494c5c249ec86aa58e8643a96368ecf)
+
+[![Image from Gyazo](https://i.gyazo.com/8deff43011ed9ad6ed330854454569d8.jpg)](https://gyazo.com/8deff43011ed9ad6ed330854454569d8)
 
 # 工夫したポイント
 スコア管理において工夫したのはプレーしながら、ラウンドが終わってからのどちらでもスコアの記入を行えるようにしたことです。
