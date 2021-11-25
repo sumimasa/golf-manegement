@@ -35,7 +35,7 @@ pass:masaki190
 # 課題解決方法
 ・スコアの管理は記入、編集ができるようにしました。
 
-[![Image from Gyazo](https://i.gyazo.com/24b157ab09981270b53e88a0a311aca4.gif)](https://gyazo.com/24b157ab09981270b53e88a0a311aca4)
+[![Image from Gyazo](https://i.gyazo.com/ae305350c7e78ed26fd0080ea1a5925a.gif)](https://gyazo.com/ae305350c7e78ed26fd0080ea1a5925a)
 
 
 
