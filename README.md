@@ -39,7 +39,7 @@ pass:masaki190
 
 
 
-[![Image from Gyazo](https://i.gyazo.com/d203579ebc51d2979bd42a8bee5f6741.gif)](https://gyazo.com/d203579ebc51d2979bd42a8bee5f6741)
+
 
 
 ・メモも記入、編集ができるようにしました。
