@@ -4,29 +4,24 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   background-image: image-url('john-such-XhQahuFDq1E-unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 55%;
 }
+
 .form{
-  
   text-align:center;
-  
   height: 80%;
   width: 80%;
-}
-.field{
-  text-decoration: none;
 }
 
 .form-group {
   width: 50%;
   margin: 0 auto;
   padding-top: 20px;
-  
 }
+
 .input-default{
   margin:0 auto;
   width:70%;
@@ -36,18 +31,12 @@
   border:1px solid black;
   border-radius: 10px;
 }
-.form-text{
-  text-align:center;
-  font-style: italic
-}
+
 .actions{
   text-align: center;
   margin:30px 0 70px;
-  
 }
-.button{
-  text-align: center;
-}
+
 .sign-up{
   font-size: 30px;
   font-style: italic;
@@ -59,13 +48,15 @@
   font-family: 'M PLUS 1p',serif;
   font-style: italic;
 }
+
 .btn{
   color:pink;
   text-decoration: none;
-  border:1px solid green;
+  border:1px solid black;
   border-radius: 10px;
   padding:10px;
 }
+
 .action{
   background-color: white;
   color:rgb(243, 22, 243);
@@ -73,28 +64,31 @@
   width:15%;
   border-radius: 10px;
 }
+
 .sign{
   color:white;
   background-color: yellowgreen;
   border:1px solid green;
 }
+
 .sns-wrapper{
   display: flex;
   justify-content: space-around;
   margin:25px auto;
-  
   width:50%;
-  
 }
+
 .facebook{
   background-color: blue;
   color:white;
   margin-right:5px;
 }
+
 .google{
   background-color: white;
   color:red;
 }
+
 .field_with_errors {
   display: contents;
 }
@@ -103,21 +97,22 @@
   .user-wrapper{
     background-size:cover;
   }
+
   .input-default{
     width:80%;
-    
   }
+
   .form-group{
     width:80%;
   }
+
   .sns-wrapper{
     width:80%;
-    
   }
+
   .action{
     width:50%;
   }
-  
 }
 
 @media (max-width:599px){
@@ -125,6 +120,7 @@
     font-size:20px;
     width:60%;
   }
+  
   .sns-wrapper{
     width:100%;
     font-size:10px;
