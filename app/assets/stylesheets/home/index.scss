@@ -2,20 +2,19 @@
   height: 100vh;
   width: 100vw;
   background-image: image-url("amauri-cruz-filho-kBNV9WpCs5k-unsplash.jpg");
-  background-size: 100vw,100vh;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center 55%;
   display: flex;
   align-items: center;
-  
 }
+
 .container{
   margin:0 auto;
-  width: 1170px;
-  
+  width: 80%;
 }
+
 .contents{
-  
   width:70%;
   margin:0 auto;
 }
@@ -24,8 +23,8 @@
   text-align: center;
   width:100%;
   margin:50px auto;
-  
 }
+
 .content{
   position: relative;
     /*ボタンの形状*/
@@ -37,6 +36,8 @@
     text-align: center;
     outline: none;
 }
+
+/*各ボタンの回転*/
 .content span{
   display: block;
     position: absolute;
@@ -45,36 +46,42 @@
     border: 1px solid #333;
     /* 重なりを3Dで表示 */
     transform-style: preserve-3d;
-    /* アニメーションの設定 数字が少なくなるほど早く回転 */
     transition: 1s;
 }
+
 .score span:nth-child(1){
   background:rgba(54, 194, 54, 0.9);
   color:#000;
   transform:rotateX(0deg);
   transform-origin:0 50% -25px;
 }
+
 .score:hover span:nth-child(1){
   transform:rotateX(-90deg);
 }
+
 .score span:nth-child(2){
   background:rgba(54, 194, 54, 0.9);
   color:#fff;
   transform:rotateX(90deg);
   transform-origin:0 50% -25px;
 }
+
 .score:hover span:nth-child(2){
   transform:rotateX(0deg);
 }
+
 .reserve span:nth-child(1){
   background:rgba(41, 82, 196, 0.774);
   color:#000;
   transform:rotateX(0deg);
   transform-origin:0 50% -25px;
 }
+
 .reserve:hover span:nth-child(1){
   transform:rotateX(-90deg);
 }
+
 .reserve span:nth-child(2){
   background:rgba(41, 82, 196, 0.774);
   color:#fff;
@@ -84,53 +91,56 @@
 .reserve:hover span:nth-child(2){
   transform:rotateX(0deg);
 }
+
 .practice span:nth-child(1){
   background:rgba(221, 7, 71, 0.897);
   color:#000;
   transform:rotateX(0deg);
   transform-origin:0 50% -25px;
 }
+
 .practice:hover span:nth-child(1){
   transform:rotateX(-90deg);
 }
+
 .practice span:nth-child(2){
   background:white;
   color:red;
   transform:rotateX(90deg);
   transform-origin:0 50% -25px;
 }
+
 .practice:hover span:nth-child(2){
   transform:rotateX(0deg);
 }
-
-
+/*各ボタンの回転ーここまでー*/
 .bottom-contents{
   display: flex;
   width:100%;
   justify-content: space-between;
   margin:0 auto;
-  
 }
+
 .bottom-left{
   width:50%;
   height:100%;
-  
   text-align: center;
 }
+
 .bottom-right{
   width:50%;
   height:100%;
   text-align: center;
-  
 }
 
 .reserve{
   background-color:rgba(45, 42, 204, 0.9)
 }
+
 .practice{
   background-color:rgba(158, 211, 72, 0.9)
-  
 }
+/*画面のローディング*/
 #splash-new {
 	position: fixed;
 	width: 100%;
@@ -141,8 +151,8 @@
   display:flex;
   align-items: center;
 }
+
 #splash-new-logo{
-  
   height:30%;
   width:100%;
   background-image: image-url("twitter_header_photo_2.png");
@@ -151,13 +161,12 @@
 }
 
 /*========= 画面遷移のためのCSS ===============*/
-
 body{
   background:  rgb(39, 42, 48);/*遷移アニメーションと同じ色を指定*/
 }
 
 body.appear{
-    background:#fff;/*画面を開いた後の背景色を指定*/
+  background:#fff;/*画面を開いた後の背景色を指定*/
 }
 
 /*画面遷移アニメーション*/
@@ -255,20 +264,18 @@ body.appear #new-container{
 	}
 	100% {
 	opacity: 1;
+  }
 }
-}
-
+/*画面のローディング -ここまで- */
 @media (max-width:1240px){
   .main-wrapper{
     background-image: image-url("domenico-loia-cNBf3ur8vEg-unsplash.jpg");
     background-size: cover;
   }
 
-  
 }
 
 @media (max-width:599px){
-  
   .contents{
     width:100%;
   }
@@ -276,9 +283,9 @@ body.appear #new-container{
   .content{
     width:50%;
   }
+
   .main-wrapper{
     background-image: image-url("andrew-shelley-Yu6Z_Fia1Ls-unsplash.jpg");
-    background-size: cover;
     
   }
 
